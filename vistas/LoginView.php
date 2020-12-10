@@ -8,15 +8,15 @@
   
 <div class ="container">
     <!-- Default form login -->
-<form class="text-center border border-light p-5" action="?controller=index&accion=login">
+<form class="text-center border border-light p-5"  action="?controller=Index&accion=login" method ="POST">
 
 <p class="h4 mb-4 mt-5">Gym Virtual</p>
 
-<!-- Email -->
-<input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Usuario">
+<!-- Login -->
+<input type="text" id="defaultLoginFormEmail" name = "usuario"  class="form-control mb-4" placeholder="Usuario">
 
 <!-- Password -->
-<input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Contraseña">
+<input type="password" id="defaultLoginFormPassword" name = "password" class="form-control mb-4" placeholder="Contraseña">
 
 <div class="d-flex justify-content-around">
     <div>
@@ -35,7 +35,7 @@
 <p>No estas registrado?
   
   <!--Cambiar !-->
-    <a href="?controller=index&accion=login">Registrarse</a>
+    <a href="?controller=index&accion=mostrarRegistro">Registrarse</a>
 </p>
 
 <!-- Social login -->
